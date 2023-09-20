@@ -7,11 +7,13 @@
 body {
   font-family: "Muli", "sans-serif";
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: blanchedalmond;
 }
 
 .container {
@@ -48,6 +50,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
@@ -59,4 +62,16 @@ body {
   .panel:nth-last-of-type(5) {
     display: none;
   }
+}
+
+#title {
+  display: inline-flex;
+  align-self: center;
+  justify-self: center;
+  color: brown;
+}
+
+#logo {
+  color: chocolate;
+  font-weight: bold;
 }
